@@ -1,5 +1,6 @@
     // Momentum predictor
-
+    Info<< "\ncorrectBoundaryVelocity\n" << endl;
+    
     MRF.correctBoundaryVelocity(U);
 
     tmp<fvVectorMatrix> tUEqn
