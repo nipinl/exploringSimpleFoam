@@ -2,6 +2,7 @@
     "files.associations": {
         "exploringSimpleFoam.C": "cpp",
         "fvcFluxTemplates.C": "cpp",
-        "findRefCell.C": "cpp"
+        "findRefCell.C": "cpp",
+        "fvcFlux.C": "cpp"
     }
 }
