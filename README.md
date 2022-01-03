@@ -1,2 +1,2 @@
 # exploringSimpleFoam
-understanding the simpleFoam in detail
+understanding the simpleFoam in detail!
