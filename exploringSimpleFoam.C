@@ -79,7 +79,6 @@ int main(int argc, char *argv[])
     );
 
     #include "postProcess.H"
-
     #include "addCheckCaseOptions.H"
     #include "setRootCaseLists.H"
     #include "createTime.H"

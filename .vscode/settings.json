@@ -4,5 +4,6 @@
         "fvcFluxTemplates.C": "cpp",
         "findRefCell.C": "cpp",
         "fvcFlux.C": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
