@@ -1,45 +1,23 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  v2012                                 |
-|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|  \\    /   O peration     | Version:  2.2.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
 FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volVectorField;
-    object      U;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 1 -1 0 0 0 0];
+transportModel  Newtonian;
 
-internalField   uniform (0 0 0);
+nu              nu [ 0 2 -1 0 0 0 0 ] 3.302e-6;
 
-boundaryField
-{
-    inlet
-    {
-        type            fixedValue;
-        value           uniform (0.001 0 0);
-    }
-
-    outlet
-    {
-        type            zeroGradient;
-    }
-
-    topAndBottomWall
-    {
-        type            empty;
-    }
-
-    frontAndBack
-    {
-        type            empty;
-    }
-}
 
 // ************************************************************************* //
